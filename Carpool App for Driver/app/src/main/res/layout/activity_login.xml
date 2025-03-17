@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BA41B2E6"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/carBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="352dp"
+        android:layout_marginEnd="114dp"
+        android:alpha="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/carbackground" />
+
+    <LinearLayout
+        android:id="@+id/SignupLayout"
+        android:layout_width="0dp"
+        android:layout_height="607dp"
+        android:layout_marginBottom="44dp"
+        android:clipToPadding="false"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="55"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:src="@drawable/name_logo" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="Driver"
+            android:textColor="@color/material_dynamic_secondary99"
+            android:textSize="52sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="270dp"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:background="?attr/popupMenuBackground"
+            android:backgroundTint="#FFFFFF"
+            android:breakStrategy="simple"
+            android:ems="10"
+            android:hint="@string/email"
+            android:includeFontPadding="false"
+            android:inputType="textEmailAddress"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="270dp"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:background="?attr/popupMenuBackground"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="130dp"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:backgroundTint="#09425B"
+            android:text="@string/login" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="50" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="419dp"
+            android:layout_height="49dp"
+            android:layout_marginBottom="1dp"
+            android:background="#FFFF"
+            android:backgroundTint="#52FFFFFF"
+            android:orientation="horizontal"
+            android:paddingStart="10dp"
+            android:paddingEnd="20dp">
+
+            <TextView
+                android:id="@+id/havingAccountQ"
+                android:layout_width="294dp"
+                android:layout_height="37dp"
+                android:layout_weight="70"
+                android:backgroundTintMode="multiply"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="@string/havingAccountQ"
+                android:textColor="#2B2A2A"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/Signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:backgroundTint="#09425B"
+                android:includeFontPadding="false"
+                android:text="@string/signup" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
