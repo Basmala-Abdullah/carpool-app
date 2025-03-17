@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BA41B2E6"
+    tools:context=".Dashboard">
+
+    <ImageView
+        android:id="@+id/carBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="352dp"
+        android:layout_marginEnd="114dp"
+        android:alpha="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/carbackground" />
+
+    <LinearLayout
+        android:id="@+id/DashboardLayout"
+        android:layout_width="421dp"
+        android:layout_height="389dp"
+        android:layout_marginBottom="120dp"
+        android:clipToPadding="false"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/Booking"
+            android:layout_width="240dp"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:backgroundTint="#09425B"
+            android:text="@string/bookingPage" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7" />
+
+        <Button
+            android:id="@+id/MyTrips"
+            android:layout_width="240dp"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:backgroundTint="#09425B"
+            android:text="@string/myTrips" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7" />
+
+        <Button
+            android:id="@+id/MyProfileButton"
+            android:layout_width="240dp"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:backgroundTint="#09425B"
+            android:text="@string/MyProfile" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

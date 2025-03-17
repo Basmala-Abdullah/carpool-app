@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Carpool</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="submit">Submit</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="havingAccountQ">Don\'t have an account?</string>
+    <string name="Upcoming">Upcoming</string>
+    <string name="Past">Past</string>
+    <string name="initialPayment">0 EGP</string>
+    <string name="To">To</string>
+    <string name="From">From</string>
+    <string name="At">At</string>
+    <string name="bookingPage">Booking</string>
+    <string name="myTrips">My Trips</string>
+    <string name="MyProfile">My Profile</string>
+    <string name="edit">Edit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
